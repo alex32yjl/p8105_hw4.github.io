@@ -1,5 +1,5 @@
 ---
-title: "p8105_hw4_yl4923 flexdashboard "
+title: "Flexdashboard "
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -44,7 +44,7 @@ common_cuisine %>%
   layout(yaxis = list(title = 'restaurant number'), barmode = 'stack')
 ```
 
-## 2: Top 10 Restaurant Cuisine Type Inspection Score Distribution in Manhattan (the lower, the better)
+## 2 Top 10 Restaurant Cuisine Type Inspection Score Distribution in Manhattan (the lower, the better)
 
 ```{r}
 common_cuisine %>% 
