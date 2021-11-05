@@ -32,3 +32,14 @@ common_cuisine =
   inner_join(rest_inspec, ., by = "cuisine_description")
 ```
 
+## 1 Top 10 Restaurant Cuisine Type Distribution in NYC
+```{r}
+common_cuisine %>%
+  mutate(
+    borough = fct_infreq(boro),
+    cuisine_description = fct_infreq(cuisine_description)) %>% 
+  group_by(borough, cuisine_description) %>% 
+  summarise(n = n()) %>%
+  plot_ly(x = ~borough, y = ~n, color = ~cuisine_description, type = "bar") %>% 
+  layout(yaxis = list(title = 'restaurant number'), barmode = 'stack')
+```
