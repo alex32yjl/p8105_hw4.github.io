@@ -53,3 +53,11 @@ common_cuisine %>%
   plot_ly(x = ~cuisine_description, y = ~score, color = ~cuisine_description, type = "box",
           colors = "Set2")
 ``` 
+
+```{r}
+noaa_df = p8105.datasets::ny_noaa %>% 
+  janitor::clean_names() %>% 
+  mutate(prcp = as.numeric(prcp)/10, tmax = as.numeric(tmax)/10, tmin = as.numeric(tmin)/10) %>% # change the unit
+  rename(prcp_in_mm = prcp, snow_in_mm = snow, snwd_in_mm = snwd, tmax_in_celsius = tmax, tmin_in_celsius = tmin)
+```
+
