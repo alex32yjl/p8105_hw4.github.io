@@ -61,3 +61,22 @@ noaa_df = p8105.datasets::ny_noaa %>%
   rename(prcp_in_mm = prcp, snow_in_mm = snow, snwd_in_mm = snwd, tmax_in_celsius = tmax, tmin_in_celsius = tmin)
 ```
 
+## 3 Stations by mean of tmin and tmax from 1981 to 2010
+```{r}
+noaa_df %>% 
+  filter(tmin_in_celsius != "NA") %>% 
+  filter(tmax_in_celsius != "NA") %>%
+  group_by(id) %>% 
+  summarise(mean_tmin = mean(tmin_in_celsius), 
+            mean_tmax = mean(tmax_in_celsius), 
+            mean_prcp = mean(prcp_in_mm, na.rm = T)) %>%
+  plot_ly(x = ~mean_tmin, y = ~mean_tmax, type = "scatter", mode = "markers", 
+          alpha = 0.5, 
+          text = ~id, 
+          color = ~mean_prcp) %>% 
+  layout(
+    title = "Stations by mean tmin and mean tmax from 1981 to 2010", 
+    xaxis = list(title = "mean tmin (Celsius)"), 
+    yaxis = list(title = "mean tmax (Celsius)")
+    )
+```
