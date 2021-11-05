@@ -1,0 +1,39 @@
+---
+title: "Academic and Professional Experiences"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+## Academic Experiences
+
+**[Columbia University](https://www.columbia.edu/)**, New York, USA
+* M.S. in Biostatistics, 2021-2023
+
+**[DePauw University](https://www.depauw.edu)**, Indiana, USA
+
+*BA in Economics & Minor in Biochemistry, 2017-2021
+
+**[University of Oxford, Jesus College](https://www.jesus.ox.ac.uk/)**, Oxford, UK
+
+*Exchange student in Economics & Biology, 2020
+
+## Professional Experiences
+
+*J.P. Morgan Chase & Co London*
+Financial Analyst May. 2020 - Jul. 2020
+
+● Constructed Excel model on analyzing covariance and correlation of daily updated financial and industrial indices to extrapolate future their levels
+
+● Utilized R and Python to derive associations between asset classes in the Global market
+
+● Formed Investor Pitchbook explaining asset classes should be invested in and avoided in the short to medium term
+
+*Beijing Appraisal Center for Environment and Engineering Beijing*
+Data Analyst & Strategy Intern Jun. 2018 - Aug. 2018
+
+● Imported, cleaned, and examined data from all registered companies in China under environmental investigation
+
+● Evaluated the qualification of companies to renew contracts with data and government policies
+
+● Communicated and assisted all provincial appraisal centers to fulfill government new policies and synchronize my updated database

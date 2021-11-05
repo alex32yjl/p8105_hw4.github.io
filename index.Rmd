@@ -1,0 +1,9 @@
+---
+title: "Welcome to Yujia Li's Homepage"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+**Yujia Li** is a graduated student in the Department of Biostatistics at Columbia University in the City of New York. 
