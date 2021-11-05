@@ -7,3 +7,6 @@ output:
 ---
 
 **Yujia Li** is a graduated student in the Department of Biostatistics at Columbia University in the City of New York. 
+
+# To the next page
+[Academic and Professional Experiences](resume.html)
