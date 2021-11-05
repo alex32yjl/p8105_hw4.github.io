@@ -43,3 +43,13 @@ common_cuisine %>%
   plot_ly(x = ~borough, y = ~n, color = ~cuisine_description, type = "bar") %>% 
   layout(yaxis = list(title = 'restaurant number'), barmode = 'stack')
 ```
+
+## 2: Top 10 Restaurant Cuisine Type Inspection Score Distribution in Manhattan (the lower, the better)
+
+```{r}
+common_cuisine %>% 
+  filter(boro == "Manhattan") %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>%
+  plot_ly(x = ~cuisine_description, y = ~score, color = ~cuisine_description, type = "box",
+          colors = "Set2")
+``` 
